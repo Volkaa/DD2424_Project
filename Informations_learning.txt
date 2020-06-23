@@ -1,0 +1,15 @@
+
+
+
+Loss function in the first paper : Cross Entropy.
+Optimizer for every models in the first paper : AdaGrad.
+
+
+Learning parameters :
+
+Thedimension of word vectors, aspect embeddings andthe size of hidden layer are 300. The length of at-tention weights is the same as the length of sentence.Theano (Bastien et al., 2012) is used for implement-ing our neural network models. We trained all mod-els with a batch size of 25 examples, and a momen-tum of 0.9,L2-regularization weight of 0.001 andinitial learning rate of 0.01 for AdaGrad.
+
+
+Dataset :
+
+We experiment on the dataset of SemEval 2014 Task42(Pontiki et al., 2014).  The dataset consists ofcustomers reviews. Each review contains a list ofaspects and corresponding polarities. Our aim is toidentify the aspect polarity of a sentence with thecorresponding aspect. The statistics is presented inTable 1.
